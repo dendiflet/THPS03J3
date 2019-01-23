@@ -12,15 +12,9 @@ class Gossip
   end
 
 	def save
-		gossip_list = CSV.open("db/gossip.csv", "a+")
-		  gossip_list.write(@author, @content)
+		gossip_list = CSV.open("db/gossip.csv", "a+") do |csv|
+    csv << [@author, @content]
+  end
 	end
 
-	def show_gossip
-		CSV.read("db/gossip.csv")
-	end
-
-
-	def delete
-	end
 end
