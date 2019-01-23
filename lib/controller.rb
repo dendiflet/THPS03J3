@@ -4,9 +4,14 @@ require 'app/gossip'
 
 class Controller
 
+  def initialize
+  	@view = View.new
+  end
+
 
 
 	def create_gossip
+		params = @view.create_gossip
 
 
    # my_gossip = Gossip.new
