@@ -11,6 +11,17 @@ class View
 		return params = {content: raggot_just_asked, author: author_just_asked}
 	end
 
+	def index_gossips(array_dinstance)
+		array_dinstance.each_index do |i|
+
+			puts "potin n°#{i} : #{array_dinstance[i].author}, son ragot => #{array_dinstance[i].content}"	
+
+			#binding.pry
+		end
+
+	end
+
+
 
 
 end

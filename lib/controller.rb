@@ -31,6 +31,8 @@ class Controller
 
   	array_gossip_list = Gossip.all#mettre qque chose du model
   	print array_gossip_list
+  	puts "\n\n"
+  	@view.index_gossips(array_gossip_list)
 
 #binding.pry
 
