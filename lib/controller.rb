@@ -1,6 +1,8 @@
 #controller.rb
 require 'view/view'
 require 'app/gossip'
+require 'pry'
+
 
 class Controller
 
@@ -13,10 +15,10 @@ class Controller
 	def create_gossip
 		params = @view.create_gossip
 
-
-   # my_gossip = Gossip.new
+#puts params
+#binding.pry
     
-    my_gossip = Gossip.new("Jean michemuche", "Féfé est de Bordeaux")
+    my_gossip = Gossip.new(params[:author], params[:content] )
     my_gossip.save
 
 	end
