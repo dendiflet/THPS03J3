@@ -28,7 +28,7 @@ class Router
 			when 2
 				@controller.index_gossips
 			when 3
-				@controller.delete
+				@controller.delete_gossip
 			when 4
 				puts "bye, a bientôt"
 				break
