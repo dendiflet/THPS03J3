@@ -30,7 +30,7 @@ class Controller
 
 
   	array_gossip_list = Gossip.all#mettre qque chose du model
-  	puts array_gossip_list
+  	print array_gossip_list
 
 #binding.pry
 

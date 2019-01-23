@@ -22,17 +22,12 @@ class Gossip
   	gossip_temp = {}
   	gossip_list = CSV.open("db/gossip.csv", "r")
   	gossip_list.each do |ligne|
-    gossip_temp = Gossip.new(ligne[0], ligne[1])
-
-#binding.pry
-
-    all_gossips << gossip_temp # permet de rajouter cet objet au array
-  end
-   
-  print all_gossips # on renvoie le résultat
-
-  binding.pry
-
+      gossip_temp = Gossip.new(ligne[0], ligne[1])
+      all_gossips << gossip_temp # permet de rajouter cet objet au array
+    end  
+  #print all_gossips # on renvoie le résultat
+  #binding.pry
+  return all_gossips
   end
 
 end
