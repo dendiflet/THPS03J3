@@ -26,7 +26,7 @@ class Router
 			when 1
 				@controller.create_gossip
 			when 2
-				@controller.read
+				@controller.index_gossips
 			when 3
 				@controller.delete
 			when 4
